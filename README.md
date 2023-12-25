@@ -27,6 +27,7 @@ IntelliResume is designed to assist users in enhancing their resumes by leveragi
 **PyResparser:** Handles the extraction of data from resumes.
 **Pandas, Plotly Express:** Used for data manipulation and visualization.
 **Spacy, NLTK:** Provides natural language processing capabilities.
+
 ## Run Locally
 
 Clone the project
@@ -57,11 +58,19 @@ Install dependencies
   pip install -r requirements.txt
 ```
 
-Start the app
+Create DB
+```
+    mysql -u your_username -p
+    CREATE DATABASE resumedb;
+```
 
+Update username and password in __init__.py
+
+Start the app
 ```bash
   streamlit run main.py
 ```
+
 
 
 ## Usage
